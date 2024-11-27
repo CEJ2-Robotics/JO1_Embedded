@@ -1,0 +1,13 @@
+# Target labels
+ JO1_Embedded_CM4
+# Source files and their labels
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4.rule
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4-complete.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-build.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-configure.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-download.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-install.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-mkdir.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-patch.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-update.rule

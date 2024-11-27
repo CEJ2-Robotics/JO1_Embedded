@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7-complete.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-build.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-configure.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-download.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-install.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-mkdir.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-patch.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"JO1_Embedded_CM7"
+		],
+		"name" : "JO1_Embedded_CM7"
+	}
+}

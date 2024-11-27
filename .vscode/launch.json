@@ -1,0 +1,159 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug CM7 - ST-Link",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${command:STM32VSCodeExtension.dualCoreCM7Target}",
+            "request": "launch",        
+            "servertype": "stlink",
+            "device": "STM32H745ZITx", //MCU used
+            "interface": "swd",
+            "serialNumber": "",        //Set ST-Link ID if you use multiple at the same time
+            "runToEntryPoint": "main",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32H745_CM7.svd",
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",
+            "v1": false,
+            "serverArgs": [
+                "-m","0",
+                "-t", "-s", 
+                "-k"
+            ],
+            "preLaunchTask": "Build + Flash CM7"
+        },
+        {
+            "name": "Attach CM7 - ST-Link",
+            "cwd": "${workspaceFolder}",    
+            "type": "cortex-debug",
+            "executable": "${command:STM32VSCodeExtension.dualCoreCM7Target}",
+            "request": "attach", 
+            "servertype": "stlink",
+            "device": "STM32H745ZITx", //MCU used
+            "interface": "swd",
+            "serialNumber": "",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32H745_CM7.svd",
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",
+            "v1": false,
+            "serverArgs": [
+                "-m","0",
+                "-t", "-s"
+            ],
+        },    
+        /* STM32CubeMX and the majority of STM32Cube examples targeting dual-core devices are configured to let CPU1 control the launch of the CPU2.
+         * The master slave aspect implies that CPU1 has to execute code making the CPU2 available to the debugger.
+         * The following template assumes that the user understand how/when the CPU2 is released by CPU1 code execution.
+         */
+        /*
+        {
+            "name": "Debug CM4 - ST-Link",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${command:STM32VSCodeExtension.dualCoreCM4Target}",
+            "request": "launch",        
+            "servertype": "stlink",
+            "device": "STM32H745ZITx", //MCU used
+            "interface": "swd",
+            "serialNumber": "",        //Set ST-Link ID if you use multiple at the same time
+            "runToEntryPoint": "main",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32H745_CM4.svd",
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",
+            "v1": false,
+            "serverArgs": [
+                "-m","3",
+                "-t", "-s", 
+                "-k"
+            ],
+            "preLaunchTask": "Build + Flash CM4"
+        },
+        */
+        {
+            "name": "Attach CM4 - ST-Link",
+            "cwd": "${workspaceFolder}",    
+            "type": "cortex-debug",
+            "executable": "${command:STM32VSCodeExtension.dualCoreCM4Target}",
+            "request": "attach", 
+            "servertype": "stlink",
+            "device": "STM32H745ZITx", //MCU used
+            "interface": "swd",
+            "serialNumber": "",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32H745_CM4.svd",
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",
+            "v1": false,
+            "serverArgs": [
+                "-m","3",
+                "-t", "-s"
+            ],
+        },    
+        /* STM32CubeMX and the majority of STM32Cube examples targeting dual-core devices are configured to let CPU1 control the launch of the CPU2.
+         * The master slave aspect implies that CPU1 has to execute code making the CPU2 available to the debugger.
+         * The following template assumes that the user understand how/when the CPU2 is released by CPU1 code execution.
+        /* In this launch config, the CM7 debug is started,
+        then we wait 5s for the CM4 to boot. After than,
+        a launch config to attach to the CM4 is started.
+         */
+        /*
+        {
+            "name": "Debug CM7 + CM4 - ST-Link",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${command:STM32VSCodeExtension.dualCoreCM7Target}",
+            "loadFiles": [
+                "${command:STM32VSCodeExtension.dualCoreCM7Target}",
+                "${command:STM32VSCodeExtension.dualCoreCM4Target}",
+            ],
+            "request": "launch",
+            "servertype": "stlink",
+            "device": "STM32H745ZITx",
+            "interface": "swd",
+            "serialNumber": "",
+            "runToEntryPoint": "main",
+            "svdFile": "${config:STM32VSCodeExtension.cubeCLT.path}/STMicroelectronics_CMSIS_SVD/STM32H745_CM7.svd}",
+            "serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+            "stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+            "stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+            "armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+            "gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",
+            "v1": false,
+            "serverArgs": [
+                "-m", "0",
+                "-t","-s",
+                "-k",
+            ],
+            "preLaunchTask": "Build + Flash CM7 & CM4",
+            "chainedConfigurations": {
+                "enabled": true,
+                "waitOnEvent": "postInit",
+                "detached": true,
+                "delayMs":5000,    // Wait 5s, could be optimized
+                "lifecycleManagedByParent": true,   
+                "launches": [ 
+                    {
+                        "name": "Attach CM4 - ST-Link",
+                        "folder": "${workspaceFolder}"
+                    }
+                ]
+            }
+        },
+        */
+    ]
+}

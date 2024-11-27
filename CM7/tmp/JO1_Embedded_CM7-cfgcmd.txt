@@ -1,0 +1,1 @@
+cmd='/opt/local/bin/cmake;-DCMAKE_EXPORT_COMPILE_COMMANDS=ON;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

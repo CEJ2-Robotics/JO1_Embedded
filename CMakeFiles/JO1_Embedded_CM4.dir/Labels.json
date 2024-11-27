@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM4-complete.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-build.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-configure.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-download.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-install.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-mkdir.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-patch.rule"
+		},
+		{
+			"file" : "/Users/saucesaft/Developer/JO1_Embedded/CM4/src/JO1_Embedded_CM4-stamp/JO1_Embedded_CM4-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"JO1_Embedded_CM4"
+		],
+		"name" : "JO1_Embedded_CM4"
+	}
+}

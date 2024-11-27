@@ -1,0 +1,13 @@
+# Target labels
+ JO1_Embedded_CM7
+# Source files and their labels
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7.rule
+/Users/saucesaft/Developer/JO1_Embedded/CMakeFiles/JO1_Embedded_CM7-complete.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-build.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-configure.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-download.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-install.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-mkdir.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-patch.rule
+/Users/saucesaft/Developer/JO1_Embedded/CM7/src/JO1_Embedded_CM7-stamp/JO1_Embedded_CM7-update.rule
